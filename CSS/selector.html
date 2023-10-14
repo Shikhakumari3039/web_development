@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selector</title>
     <style>
+        /* Element selector */
+        p{
+           background: blue;
+        }
+        /* Id selector */
         #firstPara{
             color: red;
         }
+        /* Class selector */
         .bgBlue {
             color: rgb(149, 0, 255);
         }
-        #thirdPara{
-            color: rgb(43, 226, 122);
+        /* Grouping selector  */
+        footer,span{
+            background-color: pink;
         }
     </style>
 </head>
 <body>
     <h3>CSS Selector</h3>
+    <div>
     <p id="firstPara">This is simple paragraph to document css selector.</p>
-    <p id="secondPara" class="redElement bgBlue">This is another simple paragraph to document css selector.</p>
-    <p id="thirdPara">This is yet another simple paragraph to document css selector.</p>
+    <p id="secondPara" class="bgBlue">This is yet another simple paragraph to document css selector.</p>
+    <span id="thirdPara"> This ia another simple paragraph to document css selector</span>
+    </div>
+    <footer> This is footer</footer>
 </body>
 </html>
