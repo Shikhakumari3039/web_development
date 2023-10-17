@@ -5,18 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Display Property</title>
     <style>
-        header{
-            margin: auto;
-            padding:40px;
-            border: 1px solid red;
-            /* height: auto; */
-            width: 500px;
-            background-color: aquamarine;
+        body{
+            background-color: cadetblue;
         }
-        img{
-            width:40%px;
-            display: block;
-            height: 300px;
+        /* header{
+            margin: 20px ;
+            height: 10px;
+            padding:25px;
+            border: 3px 4px solid red;
+            float: right;
+            width: 300px;
+            
+        } */
+        .navbar{
+           background-color: brown;
+            border-radius: 65px;
+        }
+        .navbar ul{
+            overflow: auto; 
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 6px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: azure;
+        }
+        .navbar li a:hover{
+           color: green;
+        }
+        .search{
+            float: right;
+            color: beige;
+            margin:12px 75px ;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        .img{
+           height: 500px;
+           width: 50%;
+           display: block;
+           
         }
         h3{
             text-align: center;
@@ -25,26 +62,47 @@
             width: auto;
             font-size: x-large;
             height: auto;
+            /* border: 2px; */
+            background-color: rgb(126, 33, 33);
         }
         .box {
-            border:4px solid rgb(126, 25, 26);
+            /* border:4px solid rgb(58, 31, 121); */
             background-color: darkgray;
-            margin: 4px 0px;
+            margin: 5px 0px;
             padding: 23px;
             width: 33%;
-            box-sizing: border-box;
-            display: inline-block;
+            display: block;
+
+            /* box-sizing: border-box;
+            display: inline-block; */
+           
         }
         .container {
-            margin: auto;
+            float: inherit;
+            margin: 60px;
             width: 1200px;
+
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+             <ul>
+                 <li><a href="">Home </a></li>
+                 <li><a href=""> About</a></li>
+                 <li><a href="">Services </a></li>
+                 <li><a href="">Contact us </a></li>
+                 <h3 >Welcome To Shikha's Blog</h3>
+                 <div class="search"> 
+                     <input type="text" name="search" id="search" placeholder="Search this website">
+                 </div>
+             </ul>
+         </nav>
+     </header>
+
     <header class="top">
         <img src="https://th.bing.com/th?id=OIP.1YM53mG10H_U25iPjop83QHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" >
-        <h3 >Welcome to Shikha's Blog</h3>
     </header>
     <div class="container">
         <div class="box">
