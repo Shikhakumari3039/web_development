@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+.container{
+    display: flex;
+}
+.card{
+    padding: 23px 12px;
+    margin: 12px 23px;
+    /* border: 2px solid red; */
+    background-color: blueviolet;
+    /* box-shadow: offset-x offset-y color; */
+    /* box-shadow: offset-x offset-y blur-radius color; */
+    /* box-shadow: offset-x offset-y blur-radius  spread redius color; */
+
+    /* box-shadow: 10px 8px green; */
+    /* box-shadow: -10px -8px green; */
+    /* box-shadow: 7px 5px 10px green; */
+    /* box-shadow: -7px -5px 10px green; */
+    /* box-shadow: -7px -5px 10px 34px rgb(2, 4, 0.5); */
+    box-shadow: inset 3px 5px green;
+    
+    box-shadow: 3px 5px green, 4px 6px red;
+}
+    </style>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+           <h2>Card1</h2>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit in necessitatibus tempora quod atque nihil quae distinctio, aspernatur consequuntur eligendi totam alias nulla, cupiditate quasi repellat est earum vitae, sint maxime odio praesentium impedit!</p>
+         </div>
+        <div class="card" id="car-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consectetur possimus vitae libero, in nulla. Unde fuga cumque aut aperiam. Perspiciatis, at molestias. Incidunt dolorum nemo fuga esse. Quod aliquid adipisci sapiente beatae officia.</p>
+         </div>
+        <div class="card" id="car-3">
+           <h2>Card3</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eveniet quisquam earum obcaecati, ratione id perspiciatis nam nisi provident consectetur facilis delectus aperiam, officia, debitis explicabo voluptas quas laborum sapiente nemo qui nesciunt omnis.</p>
+         </div>
+    </div>
+</body>
+</html>

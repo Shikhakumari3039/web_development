@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link href="https://th.bing.com/th/id/OIP.o-_FW4MBGWc_uDqM8GHmsAHaE8?w=291&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            /* background: url('https://th.bing.com/th/id/OIP.o-_FW4MBGWc_uDqM8GHmsAHaE8?w=291&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7') no-repeat center center/cover; */
+        }
+        header::before{
+            background: url('https://th.bing.com/th/id/OIP.o-_FW4MBGWc_uDqM8GHmsAHaE8?w=291&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5 ;
+        
+        }
+        .navigation{
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            height: 344px;
+           
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+         p{
+            text-align: center;
+        }
+        /* section::before{
+            content: "This is a content"
+        } */
+        /* section::after{
+            content: "This is a content"
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to coding World</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ex voluptates atque dolores aliquam in, porro libero commodi tempore dolore numquam est ab, maiores quisquam labore aut provident laboriosam ratione officia architecto, fugit cumque.</p>
+        </section>
+</body>
+</html>
