@@ -1,0 +1,38 @@
+/* #box{
+    background-color: blue;
+} */
+/* .heading{
+    color: red;
+} */
+
+/* h1, h2, h3{
+    color: red;
+}
+button{
+    color: grey;
+    background-color: pink;
+} */
+
+p{
+    text-align: left;
+}
+/* h1{
+    text-align: center;
+} */
+
+a{
+    text-decoration: none;                 /*  underline remove krne ke liye use kiye h www.google.com se */
+}
+
+#h1{
+    font-weight: normal;
+}
+#h2{
+    font-weight: bold;
+}
+#h3{
+    font-weight: lighter;
+}
+#h4{
+    font-weight: 900;
+}

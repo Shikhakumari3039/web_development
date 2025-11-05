@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeals.com</title> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://googleapis.com/css?family=Baloo+Bhai|Bree=Serif&display=swap">
+</head>
+<style>
+    CSS Reset
+*{
+margin: 0;
+padding: 0;
+}
+
+/* CSS Variables */
+:root{
+--navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+display: flex;
+align-items: center;
+position:relative;
+top: 0px;
+}
+ 
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+top: 0px;
+left: 0px;
+
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.4;
+}
+/* Navigation LOGO and Image */
+#th{
+margin: 15px 34px;
+}
+#th img{
+height: 56px;
+margin: 3px 6px;
+margin-right: auto;
+}
+ 
+/* Navigation Bar: List Styling */
+#navbar ul{
+display: flex;
+}
+#navbar ul li{
+list-style: none;
+font-size: 1.2rem;
+}
+#navbar ul li a{
+color:white;
+display: block; 
+padding: 3px 12px;
+border-radius: 20px;
+text-decoration: none;
+}
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('img1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 90%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: blue;
+    text-align: center;
+    font-family: 'bree Sreif', serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'bree Sreif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services.box{
+    padding: 34px;
+    margin: 3px 6px ;
+    border: 2px solid red;
+    border-radius: 28px;
+    background: #f2f2f2;
+    
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: black;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+</style>
+<body>
+    <nav id="navbar">
+        <div id="th">
+            <img src="th.jpg" height="100" width="100" alt="MyOnlineMeals.com">
+        </div>
+        <ul>
+            <li class="item"><a href>Home</a></li>
+            <li class="item"><a href>Services</a></li>
+            <li class="item"><a href>About Us</a></li>
+            <li class="item"><a href>Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeals</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut expedita eum nisi adipisci debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="th1.jpeg" height="700" width="200" alt="">
+                <h3 class="h-secondary center">Food Catering</h3>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni similique cupiditate deserunt voluptatum perspiciatis porro,dolorem amet velit iusto harum aliquid nam.</p>
+            </div>
+            <div class="box">
+                <img src="th01.jpg" height="700" width="200" alt="">
+                <h3 class="h-secondary center">Bulk Ordering</h3>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni similique
+                cupiditate deserunt voluptatum perspiciatis porro,dolorem amet velit iusto harum aliquid nam.</p>
+            </div>
+            <div class="box">
+                <img src="th3.jpeg" height="700" width="200" alt="">
+                <h3 class="h-secondary center">Food Ordering</h3>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni similique cupiditate deserunt voluptatum perspiciatis porro,dolorem amet velit iusto harum aliquid nam.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

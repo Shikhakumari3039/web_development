@@ -1,0 +1,31 @@
+/* h1{
+    color:red;
+}
+
+p{ 
+    color: green
+}
+button{
+    color: brown;
+    background-color: white;
+}
+
+body{
+    background-color: black;
+} */
+
+*{
+    color:blue;
+}
+button{
+    color: brown;
+}
+#headingOne{
+    color: yellow;
+}
+#headingTwo{
+    color: red;
+}
+.myClass{
+    color: green;
+}
