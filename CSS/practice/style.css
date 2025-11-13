@@ -1,38 +1,93 @@
-/* #box{
-    background-color: blue;
-} */
-/* .heading{
-    color: red;
-} */
-
-/* h1, h2, h3{
-    color: red;
+/* *{
+    padding: 0;
+    margin: 0;
+    color: white;
 }
+#navbar{
+    height: 60px;
+    background-color: black;
+}
+
+input{
+    margin-left: 200px;
+}
+
 button{
-    color: grey;
-    background-color: pink;
-} */
-
-p{
-    text-align: left;
+    background-color: orange;
+    color: white;
 }
-/* h1{
+
+#logo{
+    margin-left: 2px;
+    color: tomato;
+    font-size: 25px;
+}
+
+a{
+    color: white;
+    margin-left: 200px;
+    text-decoration: none;
+}
+.contentBox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#content{
+    height: 600px;
+}
+
+footer{
+    background-color: black;
+    color: white;
     text-align: center;
 } */
 
-a{
-    text-decoration: none;                 /*  underline remove krne ke liye use kiye h www.google.com se */
+
+/* div{
+    height: 200px;
+    width:200px;
+    background-color: chocolate;
 }
 
-#h1{
-    font-weight: normal;
+@media(max-width: 300px){
+    div{
+        background-color: green;
+    }
 }
-#h2{
-    font-weight: bold;
+
+@media(main-width: 300px) and (max-width: 400px){
+    div{
+        background-color: pink;
+    }
 }
-#h3{
-    font-weight: lighter;
+
+@media(main-width: 400px) and (max-width: 600px){
+    div{
+        background-color: red;
+    }
 }
-#h4{
-    font-weight: 900;
+
+@media(min-width: 600px){
+    div{
+        background-color: blue;
+    }
+} */
+
+.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 25px solid black;
+    border-top: 20px solid blue;
+    animation: spinAnimate 3s ease-in 0s infinite normal;
+}
+@keyframes spinAnimate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(260deg);
+    }
 }
